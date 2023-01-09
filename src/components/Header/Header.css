@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.header_wrapper {
+  width: 1445px;
+  display: flex;
+  justify-content: center;
+}
+.menu_wrapper {
+  height: 88px;
+  align-items: center;
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #828282;
+}
+.menu__btn{
+	display: flex;
+	align-items: center;
+	visibility: hidden;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	z-index: 1;
+}
+
+#menu__toggle {
+	opacity: 0;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 25px;
+	background-color: black;
+	transition-duration: .25s;
+}
+
+.menu__btn > span::after {
+	content: '';
+	top: 8px;
+}
+
+.menu__btn > span::before {
+	content: '';
+	top: -8px;
+}
+
+.menu__btn {
+	display: flex;
+	align-items: center;
+	position: fixed;
+	top: 96px;
+	right: 20px;
+}
+
+
+#menu__toggle:checked ~ .menu__btn > span {
+	transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+	top: 0;
+}
+
+
+#menu__toggle:checked ~ .menu__box {
+	visibility: visible;
+	right: -40px;
+}
+@media screen and (max-width:376px) {
+  .menu_wrapper{
+    display:none;
+  }
+  .menu__btn{
+		visibility: visible;
+	}
+  .header_wrapper{
+    padding-top:65px ;
+    width:316px;
+  }
+}

@@ -1,0 +1,137 @@
+.main {
+  width: 1445px;
+}
+.main_wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+.first_part {
+  display: flex;
+  justify-content: space-between;
+  height: 188px;
+  align-items: center;
+}
+.name {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 47.3392px;
+  line-height: 60px;
+  color: #070707;
+  width: 123px;
+}
+.profession {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #070707;
+  width: 155px;
+}
+.language {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 50px;
+  transform: rotate(-90deg);
+}
+.language_color {
+  color: #828282;
+}
+.img {
+  padding-bottom: 104px;
+}
+.second_part {
+  width: 1445px;
+  height: 506px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.second_part h2 {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 43px;
+  text-align: center;
+  padding-bottom: 18px;
+}
+.second_part p {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  width: 486px;
+}
+.third_pard {
+  width: 940px;
+  margin: 0 auto;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.third_pard h2 {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 43px;
+  text-align: center;
+  padding-bottom:69px;
+}
+.third_pard p {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+}
+.new_img{
+  display: none;
+}
+@media screen and (max-width:375px) {
+  .main, .second_part{
+    width:375px;
+  }
+  .main_wrapper,.third_pard{
+    width: 316px;
+    margin:0 auto;
+  }
+  .second_part p{
+    width:316px;
+  }
+  .first_part{
+    display: block;
+  }
+  .third_pard{
+    height: 1421px;
+  }
+  .line{
+    display: none;
+  }
+  .img{
+    display:none;
+  }
+  .new_img{
+    display: block;
+  }
+  .language{
+    display:none;
+  }
+  .main_wrapper{
+    padding-bottom: 83px;
+  }
+  .third_pard h2 {
+    padding-bottom: 40px;
+  }
+}

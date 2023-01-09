@@ -1,0 +1,99 @@
+.footer {
+  width: 1445px;
+  background-color: #f6f6f6;
+  height: 603px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer_wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+.last_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.last_part h2 {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 43px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.last_part p {
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.last_part button {
+  background-color: black;
+  color: white;
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  padding:13px 28px 6px 30px ;
+  border:5px;
+  border-radius: 40px;
+  width: 180px;
+  margin:0 auto;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width:290px;
+  margin:0 auto;
+  padding-top:80px ;
+  padding-bottom:46px;
+}
+.footer_text p{
+    font-family: 'Abel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #828282;  
+    width: 243px;
+    margin:0 auto;
+}
+
+@media screen and (max-width:376px) {
+    .footer{
+        width:375px;
+        height: 454px;
+    }
+    .footer_wrapper{
+        width: 316px;
+        height:454px ;
+    }
+    .last_part button{
+        width:316px;
+    }
+    .last_part{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 300px;
+    }
+    .last_part p{
+        padding:0;
+    }
+    .last_part h2{
+        padding:0;
+    }
+    .icons{
+        padding-top:20px;
+    }
+    
+}

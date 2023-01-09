@@ -1,0 +1,33 @@
+.skill_elem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.fa {
+  padding-top: 40px;
+}
+.active {
+  color: black;
+}
+.noactive {
+  color: #e5e5e5;
+}
+.fa{
+  padding-right: 9px;
+}
+.title {
+  padding-top: 25px;
+  font-family: "Abel";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #828282;
+}
+
+@media screen and (max-width:376px) {
+  
+}
